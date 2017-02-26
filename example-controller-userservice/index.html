@@ -1,0 +1,16 @@
+   <head>
+      <title>Angular JS Services</title>
+      <script src = "angular-1.2.4.min.js"></script>
+	    <script src = "jquery-2.1.0.min.js"></script>
+	    <script src="controller.js"></script>
+   </head>
+   <body ng-app="MyApp">
+    <div ng-controller="MyCtrl">
+      <ul ng-repeat="user in users">
+        <li>{{user}}</li>
+      </ul>
+      <div class="nested" ng-controller="AnotherCtrl">
+        First user: {{firstUser}}
+      </div>
+    </div>
+   </body>
